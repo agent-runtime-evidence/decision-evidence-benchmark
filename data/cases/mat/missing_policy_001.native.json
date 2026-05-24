@@ -1,0 +1,35 @@
+{
+  "record_id": "smoke-mat-missing-policy-001",
+  "question_family": "policy_basis",
+  "degradation_condition": "missing_policy",
+  "fixture_status": "smoke_only",
+  "contract_trace": {
+    "trace_id": "mat-trace-001",
+    "schema_validated": true,
+    "actor": {
+      "agent_id": "agent.review_worker",
+      "principal_id": "human.reviewer"
+    },
+    "action": {
+      "name": "post_comment",
+      "resource": "repo:example/pr/17"
+    },
+    "contract": {
+      "contract_id": "contract:review-comment-v1",
+      "obligations": [
+        "comment_must_reference_pull_request",
+        "comment_must_be_nonempty"
+      ]
+    },
+    "policy_basis": [],
+    "lifecycle": {
+      "started_at": "2026-05-24T00:00:00Z",
+      "completed_at": "2026-05-24T00:00:05Z"
+    },
+    "validator": {
+      "contract_passed": true,
+      "signature_valid": false
+    }
+  },
+  "llm_judge_verdict": "sufficient"
+}

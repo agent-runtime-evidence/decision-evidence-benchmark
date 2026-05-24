@@ -1,0 +1,56 @@
+{
+  "record_id": "smoke-prov-missing-policy-001",
+  "question_family": "policy_basis",
+  "degradation_condition": "missing_policy",
+  "fixture_status": "smoke_only",
+  "prov_bundle": {
+    "agents": [
+      {
+        "id": "agent:runtime-worker",
+        "type": "software_agent"
+      }
+    ],
+    "activities": [
+      {
+        "id": "activity:decision-001",
+        "type": "tool_invocation",
+        "action": "post_comment",
+        "started_at": "2026-05-24T00:00:00Z",
+        "ended_at": "2026-05-24T00:00:02Z"
+      }
+    ],
+    "entities": [
+      {
+        "id": "entity:repo-pr-17",
+        "type": "pull_request"
+      }
+    ],
+    "wasAssociatedWith": [
+      {
+        "activity": "activity:decision-001",
+        "agent": "agent:runtime-worker",
+        "role": "review_worker"
+      }
+    ],
+    "used": [
+      {
+        "activity": "activity:decision-001",
+        "entity": "entity:repo-pr-17"
+      }
+    ],
+    "wasGeneratedBy": [
+      {
+        "entity": "entity:comment-42",
+        "activity": "activity:decision-001"
+      }
+    ],
+    "policy_basis": [],
+    "signatures": [
+      {
+        "subject": "activity:decision-001",
+        "valid": true
+      }
+    ]
+  },
+  "llm_judge_verdict": "sufficient"
+}

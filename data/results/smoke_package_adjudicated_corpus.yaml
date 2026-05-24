@@ -1,0 +1,31 @@
+schema_version: 1
+corpus_id: smoke
+version: 0.0.0-smoke
+claim_status: smoke_only_not_empirical_evidence
+expected_regimes:
+- aegis_ntc
+- aer
+- dcc_hdp
+- dynamic_capabilities
+- ieec
+- llm_audit_trails
+- mat
+- prov
+case_files:
+- path: data/results/smoke_package_adjudicated_cases.jsonl
+  role: case_manifest_jsonl
+annotation_files:
+- path: data/annotations/smoke_annotations.jsonl
+  role: two_annotator_property_labels
+label_contract:
+  mode: embedded_property_labels
+  calibration_status: smoke_two_annotator_fixture
+  required_properties:
+  - actor_identity
+  - principal_authority
+  - action_boundary
+  - policy_basis
+  - decision_basis
+  - data_resource_touch
+  - lifecycle_context
+  - verification_strength

@@ -1,0 +1,18 @@
+{
+  "annotation_status": "property_annotation_required",
+  "artifact_kind": "decision_evidence_manuscript_corpus_source_manifest",
+  "case_source_file": "case_evidence_sources.jsonl",
+  "evidence_plane_records_file": "evidence_plane_records.jsonl",
+  "expected_case_count": 64,
+  "manuscript_result_ready": false,
+  "materialization_id": "manuscript_source_materialization_v1",
+  "native_records_file": "native_records.jsonl",
+  "result_honesty": "Source-reviewed manuscript benchmark material only. Property labels, adjudication, scorer outputs, baselines, package results, and manuscript result claims require separate artifacts.",
+  "review_records_file": "review_records.jsonl",
+  "reviewed_at": "2026-05-25T00:00:00Z",
+  "reviewer_id": "deterministic_manuscript_source_materializer",
+  "schema_version": 1,
+  "source_review_status": "source_reviewed_needs_annotation",
+  "source_scope": "manuscript_corpus_evidence",
+  "source_status": "reviewed_non_fixture_evidence"
+}

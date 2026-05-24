@@ -1,0 +1,47 @@
+{
+  "record_id": "smoke-llm-audit-missing-policy-001",
+  "question_family": "policy_basis",
+  "degradation_condition": "missing_policy",
+  "fixture_status": "smoke_only",
+  "audit_trail": {
+    "run_id": "run-llm-audit-001",
+    "model": "example-model",
+    "actor": {
+      "agent_id": "agent.review_worker",
+      "principal_id": "human.reviewer"
+    },
+    "messages": [
+      {
+        "role": "system",
+        "content_ref": "prompt:review-worker-v1"
+      },
+      {
+        "role": "user",
+        "content_ref": "request:review-pr-17"
+      },
+      {
+        "role": "assistant",
+        "content_ref": "assistant:tool-call-1"
+      }
+    ],
+    "tool_calls": [
+      {
+        "id": "tool-call-1",
+        "name": "post_comment",
+        "arguments": {
+          "resource": "repo:example/pr/17",
+          "comment_id": "comment-42"
+        }
+      }
+    ],
+    "policy_evaluation": null,
+    "timestamps": {
+      "started_at": "2026-05-24T00:00:00Z",
+      "completed_at": "2026-05-24T00:00:03Z"
+    },
+    "integrity": {
+      "hash_chain_valid": false
+    }
+  },
+  "llm_judge_verdict": "sufficient"
+}

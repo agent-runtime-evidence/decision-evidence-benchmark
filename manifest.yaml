@@ -1,0 +1,326 @@
+schema_version: 1
+artifact: decision-evidence-benchmark
+scope: scaffold-plus-label-adjudication
+files:
+  - path: LICENSE
+    role: license
+  - path: Makefile
+    role: verification_entrypoint
+  - path: manifest.yaml
+    role: artifact_manifest
+  - path: README.md
+    role: public_overview
+  - path: data/README.md
+    role: data_policy
+  - path: data/annotations/README.md
+    role: annotation_policy
+  - path: data/annotations/draft_balanced_64_annotations.jsonl
+    role: draft_annotation_fixture
+  - path: data/annotations/smoke_annotations.jsonl
+    role: smoke_annotation_fixture
+  - path: data/baselines/README.md
+    role: baseline_output_policy
+  - path: data/corpus/README.md
+    role: corpus_policy
+  - path: data/corpus/manuscript_corpus.template.yaml
+    role: manuscript_corpus_template
+  - path: data/corpus/draft_balanced_64_corpus.yaml
+    role: draft_corpus_manifest
+  - path: data/corpus/smoke_corpus.yaml
+    role: smoke_corpus_manifest
+  - path: data/oracle/construction_oracle_v1.yaml
+    role: manuscript_construction_oracle_spec
+  - path: data/cases/draft_balanced_64_cases.jsonl
+    role: draft_case_manifest
+  - path: data/cases/manuscript_case_sources.template.jsonl
+    role: manuscript_case_source_template
+  - path: data/cases/manuscript_case_sources.reviewed.jsonl
+    role: manuscript_case_source_reviewed
+  - path: data/cases/manuscript_cases.unadjudicated.jsonl
+    role: manuscript_unadjudicated_case_manifest
+  - path: data/cases/manuscript_scorer_input_cases.jsonl
+    role: manuscript_redacted_scorer_input_cases
+  - path: data/cases/manuscript_scorer_input_case_id_map.jsonl
+    role: manuscript_redacted_scorer_input_case_id_map
+  - path: data/cases/aegis_ntc/missing_policy_001.native.json
+    role: native_fixture
+  - path: data/cases/aer/missing_policy_001.native.json
+    role: native_fixture
+  - path: data/cases/dcc_hdp/missing_policy_001.native.json
+    role: native_fixture
+  - path: data/cases/dynamic_capabilities/missing_policy_001.native.json
+    role: native_fixture
+  - path: data/cases/ieec/missing_policy_001.native.json
+    role: native_fixture
+  - path: data/cases/llm_audit_trails/missing_policy_001.native.json
+    role: native_fixture
+  - path: data/cases/mat/missing_policy_001.native.json
+    role: native_fixture
+  - path: data/cases/prov/missing_policy_001.native.json
+    role: native_fixture
+  - path: data/fixtures/smoke_cases.jsonl
+    role: smoke_case_manifest
+  - path: data/fixtures/smoke_scorer_outputs.jsonl
+    role: smoke_candidate_scorer_output
+  - path: data/scorers/README.md
+    role: scorer_output_policy
+  - path: data/scorers/decision_trace_reconstructor_outputs.jsonl
+    role: manuscript_deterministic_candidate_scorer_output
+  - path: data/scorers/draft_balanced_64_scorer_outputs.jsonl
+    role: draft_candidate_scorer_output
+  - path: data/sources/README.md
+    role: manuscript_source_policy
+  - path: data/sources/manuscript_corpus/source_manifest.json
+    role: manuscript_corpus_source_manifest
+  - path: data/sources/manuscript_corpus/case_evidence_sources.jsonl
+    role: manuscript_corpus_source_rows
+  - path: data/sources/manuscript_corpus/native_records.jsonl
+    role: manuscript_corpus_native_source_records
+  - path: data/sources/manuscript_corpus/evidence_plane_records.jsonl
+    role: manuscript_corpus_evidence_plane_records
+  - path: data/sources/manuscript_corpus/review_records.jsonl
+    role: manuscript_corpus_source_review_records
+  - path: docs/benchmark_backend_scope.md
+    role: scope_contract
+  - path: docs/manuscript_artifact_plan.md
+    role: manuscript_artifact_plan
+  - path: docs/manuscript_runbook.md
+    role: manuscript_runbook
+  - path: pyproject.toml
+    role: python_project_config
+  - path: scripts/audit_manuscript_source_roots.py
+    role: manuscript_source_root_audit
+  - path: scripts/audit_manuscript_label_leakage.py
+    role: manuscript_label_leakage_audit
+  - path: scripts/archive_stale_manuscript_reviewed_workbooks.py
+    role: manuscript_stale_reviewed_workbook_archiver
+  - path: scripts/build_manuscript_evidence_intake.py
+    role: manuscript_evidence_intake
+  - path: scripts/check_manuscript_inputs.py
+    role: manuscript_input_preflight
+  - path: scripts/convert_manuscript_case_sources.py
+    role: manuscript_case_source_converter
+  - path: scripts/export_manuscript_evidence_workqueue.py
+    role: manuscript_evidence_workqueue_export
+  - path: scripts/export_manuscript_annotation_workbook.py
+    role: manuscript_annotation_workbook_export
+  - path: scripts/export_manuscript_annotation_slice.py
+    role: manuscript_annotation_slice_export
+  - path: scripts/export_manuscript_llm_judge_workbook.py
+    role: manuscript_llm_judge_workbook_export
+  - path: scripts/export_manuscript_scorer_workbook.py
+    role: manuscript_scorer_workbook_export
+  - path: scripts/export_manuscript_source_candidates.py
+    role: manuscript_source_candidate_export
+  - path: scripts/export_manuscript_source_review_packets.py
+    role: manuscript_source_review_packet_export
+  - path: scripts/export_manuscript_source_review_slice.py
+    role: manuscript_source_review_slice_export
+  - path: scripts/export_manuscript_source_review_workbook.py
+    role: manuscript_source_review_workbook_export
+  - path: scripts/import_manuscript_evidence_workqueue.py
+    role: manuscript_evidence_workqueue_import
+  - path: scripts/import_manuscript_annotation_workbook.py
+    role: manuscript_annotation_workbook_import
+  - path: scripts/import_manuscript_llm_judge_workbook.py
+    role: manuscript_llm_judge_workbook_import
+  - path: scripts/import_manuscript_scorer_workbook.py
+    role: manuscript_scorer_workbook_import
+  - path: scripts/import_manuscript_source_review_workbook.py
+    role: manuscript_source_review_workbook_import
+  - path: scripts/init_manuscript_evidence_source.py
+    role: manuscript_evidence_source_initializer
+  - path: scripts/manuscript_authoring_status.py
+    role: manuscript_authoring_status
+  - path: scripts/merge_manuscript_source_review_slice.py
+    role: manuscript_source_review_slice_validator
+  - path: scripts/merge_manuscript_annotation_slice.py
+    role: manuscript_annotation_slice_validator
+  - path: scripts/materialize_manuscript_source_review.py
+    role: manuscript_source_review_materializer
+  - path: scripts/write_manuscript_case_source_template.py
+    role: manuscript_case_source_template_writer
+  - path: scripts/write_manuscript_construction_oracle.py
+    role: manuscript_construction_oracle_writer
+  - path: scripts/write_manuscript_deterministic_scorer.py
+    role: manuscript_deterministic_scorer_writer
+  - path: scripts/write_manuscript_scorer_input.py
+    role: manuscript_scorer_input_redaction_writer
+  - path: scripts/write_manuscript_corpus_manifest.py
+    role: manuscript_corpus_manifest_promotion
+  - path: scripts/update_checksums.py
+    role: checksum_writer
+  - path: scripts/verify_checksums.py
+    role: checksum_verifier
+  - path: src/decision_evidence_benchmark/__init__.py
+    role: package_metadata
+  - path: src/decision_evidence_benchmark/cli.py
+    role: command_line_interface
+  - path: src/decision_evidence_benchmark/corpus.py
+    role: corpus_validation
+  - path: src/decision_evidence_benchmark/construction_oracle.py
+    role: manuscript_construction_oracle
+  - path: src/decision_evidence_benchmark/deterministic_predictions.py
+    role: deterministic_prediction_helpers
+  - path: src/decision_evidence_benchmark/evaluation.py
+    role: scorer_evaluation
+  - path: src/decision_evidence_benchmark/generation.py
+    role: draft_corpus_generation
+  - path: src/decision_evidence_benchmark/io.py
+    role: io_helpers
+  - path: src/decision_evidence_benchmark/manuscript_redaction.py
+    role: manuscript_scorer_input_redaction
+  - path: src/decision_evidence_benchmark/manuscript_tables.py
+    role: manuscript_table_export
+  - path: src/decision_evidence_benchmark/readiness.py
+    role: result_readiness
+  - path: src/decision_evidence_benchmark/readiness_gaps.py
+    role: result_readiness_gap_report
+  - path: src/decision_evidence_benchmark/result_package.py
+    role: result_package_assembly
+  - path: src/decision_evidence_benchmark/schema.py
+    role: case_schema
+  - path: src/decision_evidence_benchmark/adapters/__init__.py
+    role: adapter_package
+  - path: src/decision_evidence_benchmark/adapters/aegis_ntc.py
+    role: aegis_ntc_adapter
+  - path: src/decision_evidence_benchmark/adapters/aer.py
+    role: aer_adapter
+  - path: src/decision_evidence_benchmark/adapters/dcc_hdp.py
+    role: dcc_hdp_adapter
+  - path: src/decision_evidence_benchmark/adapters/dynamic_capabilities.py
+    role: dynamic_capabilities_adapter
+  - path: src/decision_evidence_benchmark/adapters/ieec.py
+    role: ieec_adapter
+  - path: src/decision_evidence_benchmark/adapters/llm_audit_trails.py
+    role: llm_audit_trails_adapter
+  - path: src/decision_evidence_benchmark/adapters/mat.py
+    role: mat_adapter
+  - path: src/decision_evidence_benchmark/adapters/prov.py
+    role: prov_adapter
+  - path: src/decision_evidence_benchmark/adapters/registry.py
+    role: regime_registry
+  - path: src/decision_evidence_benchmark/artifacts.py
+    role: run_artifact_metadata
+  - path: src/decision_evidence_benchmark/baselines/__init__.py
+    role: baseline_implementations
+  - path: src/decision_evidence_benchmark/baselines/imported.py
+    role: imported_baseline_outputs
+  - path: src/decision_evidence_benchmark/baselines/registry.py
+    role: baseline_registry
+  - path: src/decision_evidence_benchmark/labels/__init__.py
+    role: label_package
+  - path: src/decision_evidence_benchmark/labels/adjudication.py
+    role: label_adjudication
+  - path: src/decision_evidence_benchmark/labels/agreement.py
+    role: label_agreement_metric
+  - path: src/decision_evidence_benchmark/labels/calibration.py
+    role: label_calibration
+  - path: src/decision_evidence_benchmark/labels/review.py
+    role: label_review
+  - path: src/decision_evidence_benchmark/metrics/__init__.py
+    role: metric_package
+  - path: src/decision_evidence_benchmark/metrics/overclaim.py
+    role: overclaim_metric
+  - path: src/decision_evidence_benchmark/metrics/property_accuracy.py
+    role: property_accuracy_metric
+  - path: tests/test_adapter_aer.py
+    role: adapter_test
+  - path: tests/test_adapter_aegis_ntc.py
+    role: adapter_test
+  - path: tests/test_adapter_dcc_hdp.py
+    role: adapter_test
+  - path: tests/test_adapter_dynamic_capabilities.py
+    role: adapter_test
+  - path: tests/test_adapter_ieec.py
+    role: adapter_test
+  - path: tests/test_adapter_llm_audit_trails.py
+    role: adapter_test
+  - path: tests/test_adapter_mat.py
+    role: adapter_test
+  - path: tests/test_adapter_prov.py
+    role: adapter_test
+  - path: tests/test_adapter_registry.py
+    role: adapter_registry_test
+  - path: tests/test_adjudication.py
+    role: label_adjudication_test
+  - path: tests/test_artifacts.py
+    role: artifact_test
+  - path: tests/test_agreement.py
+    role: agreement_test
+  - path: tests/test_calibration.py
+    role: label_calibration_test
+  - path: tests/test_baselines.py
+    role: baseline_test
+  - path: tests/test_cli.py
+    role: cli_test
+  - path: tests/test_corpus.py
+    role: corpus_test
+  - path: tests/test_construction_oracle.py
+    role: manuscript_construction_oracle_test
+  - path: tests/test_deterministic_predictions.py
+    role: deterministic_prediction_test
+  - path: tests/test_evaluation.py
+    role: scorer_evaluation_test
+  - path: tests/test_generation.py
+    role: draft_generation_test
+  - path: tests/test_label_review.py
+    role: label_review_test
+  - path: tests/test_metrics.py
+    role: metric_test
+  - path: tests/test_manuscript_tables.py
+    role: manuscript_table_export_test
+  - path: tests/test_manuscript_input_preflight.py
+    role: manuscript_input_preflight_test
+  - path: tests/test_manuscript_label_leakage_audit.py
+    role: manuscript_label_leakage_audit_test
+  - path: tests/test_manuscript_stale_reviewed_workbook_archive.py
+    role: manuscript_stale_reviewed_workbook_archive_test
+  - path: tests/test_manuscript_annotation_workbook.py
+    role: manuscript_annotation_workbook_test
+  - path: tests/test_manuscript_annotation_slice.py
+    role: manuscript_annotation_slice_test
+  - path: tests/test_manuscript_authoring_status.py
+    role: manuscript_authoring_status_test
+  - path: tests/test_manuscript_prediction_workbooks.py
+    role: manuscript_prediction_workbook_test
+  - path: tests/test_manuscript_source_root_audit.py
+    role: manuscript_source_root_audit_test
+  - path: tests/test_manuscript_source_candidates.py
+    role: manuscript_source_candidate_export_test
+  - path: tests/test_manuscript_source_review_packets.py
+    role: manuscript_source_review_packet_export_test
+  - path: tests/test_manuscript_source_review_slice.py
+    role: manuscript_source_review_slice_export_test
+  - path: tests/test_manuscript_source_review_slice_merge.py
+    role: manuscript_source_review_slice_validator_test
+  - path: tests/test_manuscript_source_review_workbook.py
+    role: manuscript_source_review_workbook_test
+  - path: tests/test_manuscript_evidence_intake.py
+    role: manuscript_evidence_intake_test
+  - path: tests/test_manuscript_evidence_source_init.py
+    role: manuscript_evidence_source_initializer_test
+  - path: tests/test_manuscript_evidence_workqueue.py
+    role: manuscript_evidence_workqueue_test
+  - path: tests/test_manuscript_evidence_workqueue_import.py
+    role: manuscript_evidence_workqueue_import_test
+  - path: tests/test_manuscript_case_source_template.py
+    role: manuscript_case_source_template_test
+  - path: tests/test_manuscript_case_source_conversion.py
+    role: manuscript_case_source_conversion_test
+  - path: tests/test_manuscript_corpus_manifest_promotion.py
+    role: manuscript_corpus_manifest_promotion_test
+  - path: tests/test_manuscript_construction_oracle.py
+    role: manuscript_construction_oracle_writer_test
+  - path: tests/test_manuscript_headline_numbers.py
+    role: manuscript_headline_numbers_regression_test
+  - path: tests/test_manuscript_source_materialization.py
+    role: manuscript_source_materialization_test
+  - path: tests/test_native_fixture_contract.py
+    role: native_fixture_contract_test
+  - path: tests/test_property_accuracy.py
+    role: property_accuracy_test
+  - path: tests/test_readiness.py
+    role: result_readiness_test
+  - path: tests/test_result_package.py
+    role: result_package_test

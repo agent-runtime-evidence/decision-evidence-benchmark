@@ -1,0 +1,30 @@
+.DS_Store
+.env
+.env.*
+.venv/
+venv/
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+build/
+dist/
+
+# Dev-only scratch / one-off helper scripts must not enter the tracked tree.
+scratch_*
+fill_*
+
+# Local benchmark outputs are regenerable unless promoted to a release manifest.
+data/results/*.json
+data/results/*.jsonl
+data/results/*.csv
+data/results/*.yaml
+data/results/manuscript_source_review_packets/
+data/results/*_stale_reviewed_workbook_archive/

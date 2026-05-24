@@ -1,0 +1,37 @@
+{
+  "record_id": "smoke-dynamic-capabilities-missing-policy-001",
+  "question_family": "policy_basis",
+  "degradation_condition": "missing_policy",
+  "fixture_status": "smoke_only",
+  "capability_replay": {
+    "replay_id": "dynamic-capabilities-replay-001",
+    "schema_validated": true,
+    "actor": {
+      "agent_id": "agent.review_worker",
+      "principal_id": "human.reviewer"
+    },
+    "capability": {
+      "capability_id": "capability-comment-write",
+      "name": "post_comment",
+      "resource": "repo:example/pr/17",
+      "version": "2026-05-24"
+    },
+    "replay_run": {
+      "decision_outcome": "allow",
+      "counterfactual_bundle": "baseline-policy-bundle",
+      "tool_catalog_version": "tool-catalog-2026-05-24"
+    },
+    "policy_basis": [],
+    "lifecycle": {
+      "recorded_at": "2026-05-24T00:00:00Z",
+      "replayed_at": "2026-05-24T00:00:07Z"
+    },
+    "validation": {
+      "replay_attested": true,
+      "capability_graph_validated": true,
+      "signature_valid": false,
+      "replay_hash": "sha256:933b2738586c9da78c4d195852c7e1f23b9c7a1d419da905d76f95fbc7c28767"
+    }
+  },
+  "llm_judge_verdict": "sufficient"
+}

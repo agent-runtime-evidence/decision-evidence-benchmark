@@ -1,0 +1,40 @@
+{
+  "record_id": "smoke-ieec-missing-policy-001",
+  "question_family": "policy_basis",
+  "degradation_condition": "missing_policy",
+  "fixture_status": "smoke_only",
+  "intent_execution_chain": {
+    "chain_id": "ieec-chain-001",
+    "schema_validated": true,
+    "actor": {
+      "agent_id": "agent.review_worker",
+      "principal_id": "human.reviewer"
+    },
+    "intent": {
+      "intent_id": "intent-001",
+      "objective": "post_review_comment",
+      "created_at": "2026-05-24T00:00:00Z"
+    },
+    "plan": {
+      "plan_id": "plan-001",
+      "steps": [
+        "inspect_pull_request",
+        "compose_review_comment",
+        "post_comment"
+      ]
+    },
+    "execution": {
+      "execution_id": "execution-001",
+      "action": "post_comment",
+      "resource": "repo:example/pr/17",
+      "completed_at": "2026-05-24T00:00:06Z"
+    },
+    "policy_binding": [],
+    "validation": {
+      "chain_valid": true,
+      "signature_valid": false,
+      "chain_hash": "sha256:4f017fbf1d0ed4e7497fdf4fdb8bdbff73da3b738d759eb9770f38e93d33c501"
+    }
+  },
+  "llm_judge_verdict": "sufficient"
+}

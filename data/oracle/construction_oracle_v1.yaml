@@ -1,0 +1,90 @@
+schema_version: 1
+oracle_version: construction_oracle_v1
+calibration_status: construction_rule_oracle_v1
+annotation_status: construction_rule_oracle
+label_source: construction_rule_oracle_label
+annotation_source: construction_rule_oracle_annotation
+default_category: complete
+strict_sufficient_categories:
+  - complete
+properties:
+  - actor_identity
+  - principal_authority
+  - action_boundary
+  - policy_basis
+  - decision_basis
+  - data_resource_touch
+  - lifecycle_context
+  - verification_strength
+degradation_conditions:
+  complete:
+    rule_id: rule.complete.v1
+    description: All required Decision Event Schema properties are complete.
+    overrides: {}
+  missing_delegation:
+    rule_id: rule.missing_delegation.v1
+    description: Delegated principal authority is not reconstructable.
+    overrides:
+      principal_authority: opaque
+      verification_strength: partial
+  missing_policy:
+    rule_id: rule.missing_policy.v1
+    description: Policy basis is absent or not reconstructable from evidence.
+    overrides:
+      policy_basis: opaque
+  missing_context:
+    rule_id: rule.missing_context.v1
+    description: Lifecycle context is absent or not reconstructable from evidence.
+    overrides:
+      lifecycle_context: opaque
+  conflicting_identity:
+    rule_id: rule.conflicting_identity.v1
+    description: Actor and principal identity evidence is internally inconsistent.
+    overrides:
+      actor_identity: conflicting
+      principal_authority: conflicting
+  partial_graph:
+    rule_id: rule.partial_graph.v1
+    description: Decision graph is present but incomplete across basis/context checks.
+    overrides:
+      decision_basis: partial
+      lifecycle_context: partial
+      verification_strength: partial
+  final_only:
+    rule_id: rule.final_only.v1
+    description: Only final outcome is visible; reconstructability-critical basis is absent.
+    overrides:
+      principal_authority: opaque
+      policy_basis: opaque
+      decision_basis: opaque
+      lifecycle_context: opaque
+      verification_strength: opaque
+  artifact_only:
+    rule_id: rule.artifact_only.v1
+    description: Artifact reference exists without actor/action/resource sufficiency.
+    overrides:
+      actor_identity: opaque
+      action_boundary: opaque
+      policy_basis: partial
+      decision_basis: partial
+      data_resource_touch: opaque
+      verification_strength: partial
+leakage_guard:
+  disallowed_scorer_field_names:
+    - degradation_condition
+    - property_labels
+    - label_adjudication
+    - label_basis
+    - label_oracle
+    - strict_sufficiency
+    - ground_truth
+  disallowed_case_id_tokens:
+    - complete
+    - missing_delegation
+    - missing_policy
+    - missing_context
+    - conflicting_identity
+    - partial_graph
+    - final_only
+    - artifact_only
+  result_honesty: Scorer-facing artifacts should not expose oracle labels, degradation-condition names, or case IDs that encode degradation conditions.

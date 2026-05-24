@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "If you use DEMM-Bench in your research, please cite both the software artifact and the accompanying paper."
+title: "DEMM-Bench: A Decision Evidence Maturity Benchmark for Agent-Runtime Decisions Across Eight Evidence Regimes"
+authors:
+  - family-names: "Solozobov"
+    given-names: "Oleg"
+    orcid: "https://orcid.org/0009-0009-0105-7459"
+version: "0.1.0"
+date-released: "2026-05-26"
+license: Apache-2.0
+license-url: "https://www.apache.org/licenses/LICENSE-2.0"
+url: "https://github.com/agent-runtime-evidence/decision-evidence-benchmark"
+repository-code: "https://github.com/agent-runtime-evidence/decision-evidence-benchmark"
+type: software
+keywords:
+  - "decision evidence"
+  - "Decision Evidence Maturity Model"
+  - "DEMM"
+  - "agent runtime"
+  - "benchmark"
+  - "governance evidence"
+  - "Property Sufficiency Accuracy"
+  - "Overclaim Rate"
+  - "AI governance"
+  - "reproducible benchmark"
+abstract: >-
+  DEMM-Bench is a cross-regime governance-evidence sufficiency benchmark for
+  agent-runtime decisions. It normalises eight evidence regimes (AER, MAT,
+  IEEC, DCC/HDP, PROV, LLM Audit Trails, AEGIS-NTC, Dynamic Capabilities)
+  through adapters, applies eight deterministic degradation conditions, and
+  scores governance-question reconstructability with five default
+  container-presence baselines and one redacted property-level candidate
+  scorer. Primary metrics are Property Sufficiency Accuracy and Overclaim
+  Rate. The deposited 64-case manuscript package reports trace-present and
+  schema-present baselines overclaiming on 75% of cases, ledger-present on
+  50%, and the candidate scorer achieving 56.25% mean PSA with zero
+  overclaim and paired-oracle Cohen kappa of 1.0.
+preferred-citation:
+  type: article
+  title: "DEMM-Bench: A Decision Evidence Maturity Benchmark for Agent-Runtime Decisions Across Eight Evidence Regimes"
+  authors:
+    - family-names: "Solozobov"
+      given-names: "Oleg"
+      orcid: "https://orcid.org/0009-0009-0105-7459"
+  year: 2026
+  notes: "Zenodo DOI to be inserted at deposit time."
