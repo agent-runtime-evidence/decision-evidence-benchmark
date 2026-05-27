@@ -1,5 +1,9 @@
 # Decision Evidence Benchmark
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20408699.svg)](https://doi.org/10.5281/zenodo.20408699)
+[![CI](https://github.com/agent-runtime-evidence/decision-evidence-benchmark/actions/workflows/ci.yml/badge.svg)](https://github.com/agent-runtime-evidence/decision-evidence-benchmark/actions/workflows/ci.yml)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 Executable backend scaffold for the Decision Evidence Maturity Model
 cross-regime benchmark.
 
@@ -519,3 +523,25 @@ case set, labels, scorer outputs, slice summaries, and aggregation manifest.
 
 Use `docs/manuscript_runbook.md` for the manuscript-scale execution sequence and
 `data/corpus/manuscript_corpus.template.yaml` as the starting corpus manifest.
+
+## Citation
+
+If you use DEMM-Bench in your research, please cite both the software artifact
+and the accompanying paper. The concept DOI
+[10.5281/zenodo.20408699](https://doi.org/10.5281/zenodo.20408699) resolves to
+the latest version; cite the specific version DOI for reproducibility.
+
+```bibtex
+@software{solozobov_demm_bench_2026,
+  author       = {Solozobov, Oleg},
+  title        = {{DEMM-Bench: A Decision Evidence Maturity Benchmark
+                   for Agent-Runtime Decisions Across Eight Evidence Regimes}},
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v0.1.0},
+  doi          = {10.5281/zenodo.20408700},
+  url          = {https://doi.org/10.5281/zenodo.20408700}
+}
+```
+
+See [`CITATION.cff`](CITATION.cff) for machine-readable citation metadata.

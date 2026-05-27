@@ -6,11 +6,19 @@ authors:
     given-names: "Oleg"
     orcid: "https://orcid.org/0009-0009-0105-7459"
 version: "0.1.0"
-date-released: "2026-05-26"
+date-released: "2026-05-27"
 license: Apache-2.0
 license-url: "https://www.apache.org/licenses/LICENSE-2.0"
 url: "https://github.com/agent-runtime-evidence/decision-evidence-benchmark"
 repository-code: "https://github.com/agent-runtime-evidence/decision-evidence-benchmark"
+doi: "10.5281/zenodo.20408699"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.20408699"
+    description: "Concept DOI (latest version, auto-tracks)"
+  - type: doi
+    value: "10.5281/zenodo.20408700"
+    description: "DOI of v0.1.0 snapshot"
 type: software
 keywords:
   - "decision evidence"
@@ -43,4 +51,4 @@ preferred-citation:
       given-names: "Oleg"
       orcid: "https://orcid.org/0009-0009-0105-7459"
   year: 2026
-  notes: "Zenodo DOI to be inserted at deposit time."
+  notes: "Manuscript-package archived on Zenodo: 10.5281/zenodo.20408700 (v0.1.0 snapshot). Concept DOI 10.5281/zenodo.20408699 resolves to the latest version."
