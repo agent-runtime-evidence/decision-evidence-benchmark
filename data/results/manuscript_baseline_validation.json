@@ -1,0 +1,15 @@
+{
+  "baselines": {},
+  "case_count": 64,
+  "imported_baselines": [],
+  "issues": [],
+  "metric_contract": "decision_evidence_baseline_output_validation",
+  "selected_baselines": [
+    "trace_present",
+    "ledger_present",
+    "schema_present",
+    "container_checklist",
+    "source_specific_validator"
+  ],
+  "valid": true
+}

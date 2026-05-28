@@ -1,0 +1,19 @@
+{
+  "case_count": 64,
+  "issues": [],
+  "metric_contract": "decision_evidence_scorer_output_validation",
+  "observed_scorers": [
+    "decision_trace_reconstructor"
+  ],
+  "output_count": 64,
+  "required_scorers": [
+    "decision_trace_reconstructor"
+  ],
+  "scorers": {
+    "decision_trace_reconstructor": {
+      "cases": 64,
+      "known_cases": 64
+    }
+  },
+  "valid": true
+}

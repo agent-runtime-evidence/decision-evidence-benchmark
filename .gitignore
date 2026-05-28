@@ -28,3 +28,23 @@ data/results/*.csv
 data/results/*.yaml
 data/results/manuscript_source_review_packets/
 data/results/*_stale_reviewed_workbook_archive/
+
+# Promoted manuscript package artifacts for release/Zenodo provenance.
+!data/results/manuscript_adjudicated_cases.jsonl
+!data/results/manuscript_adjudicated_corpus.yaml
+!data/results/manuscript_artifact_inventory.csv
+!data/results/manuscript_baseline_results.jsonl
+!data/results/manuscript_baseline_summary.json
+!data/results/manuscript_baseline_validation.json
+!data/results/manuscript_corpus_validation.json
+!data/results/manuscript_label_adjudication.json
+!data/results/manuscript_label_calibration.json
+!data/results/manuscript_label_review.csv
+!data/results/manuscript_label_review.json
+!data/results/manuscript_package_manifest.json
+!data/results/manuscript_readiness_gaps.json
+!data/results/manuscript_readiness_report.json
+!data/results/manuscript_run_manifest.json
+!data/results/manuscript_scorer_results.jsonl
+!data/results/manuscript_scorer_summary.json
+!data/results/manuscript_scorer_validation.json

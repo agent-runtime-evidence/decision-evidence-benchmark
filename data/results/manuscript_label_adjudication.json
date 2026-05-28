@@ -1,0 +1,15 @@
+{
+  "agreement_label_count": 512,
+  "annotators": [
+    "construction_rule_oracle_a",
+    "construction_rule_oracle_b"
+  ],
+  "case_count": 64,
+  "issues": [],
+  "metric_contract": "decision_evidence_label_adjudication",
+  "override_count": 0,
+  "override_label_count": 0,
+  "property_count": 512,
+  "unresolved_label_count": 0,
+  "valid": true
+}

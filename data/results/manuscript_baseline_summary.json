@@ -1,0 +1,936 @@
+{
+  "metric_contract": "decision_evidence_overclaim_summary",
+  "scorers": {
+    "container_checklist": {
+      "cases": 64,
+      "overclaim_cases": 0,
+      "overclaim_rate": 0.0,
+      "sufficient_cases": 8,
+      "verdict_cases": 64
+    },
+    "ledger_present": {
+      "cases": 64,
+      "overclaim_cases": 32,
+      "overclaim_rate": 0.5,
+      "sufficient_cases": 40,
+      "verdict_cases": 64
+    },
+    "schema_present": {
+      "cases": 64,
+      "overclaim_cases": 48,
+      "overclaim_rate": 0.75,
+      "sufficient_cases": 56,
+      "verdict_cases": 64
+    },
+    "source_specific_validator": {
+      "cases": 64,
+      "overclaim_cases": 0,
+      "overclaim_rate": 0.0,
+      "sufficient_cases": 8,
+      "verdict_cases": 64
+    },
+    "trace_present": {
+      "cases": 64,
+      "overclaim_cases": 48,
+      "overclaim_rate": 0.75,
+      "sufficient_cases": 56,
+      "verdict_cases": 64
+    }
+  },
+  "slices": {
+    "degradation_condition": {
+      "artifact_only": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        }
+      },
+      "complete": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        }
+      },
+      "conflicting_identity": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        }
+      },
+      "final_only": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        }
+      },
+      "missing_context": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        }
+      },
+      "missing_delegation": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        }
+      },
+      "missing_policy": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        }
+      },
+      "partial_graph": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 0,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 8,
+          "overclaim_rate": 1.0,
+          "sufficient_cases": 8,
+          "verdict_cases": 8
+        }
+      }
+    },
+    "question_family": {
+      "action_boundary": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "actor_identity": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "data_resource_touch": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "decision_basis": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "lifecycle_context": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "policy_basis": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "principal_authority": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "verification_strength": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      }
+    },
+    "regime": {
+      "aegis_ntc": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "aer": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "dcc_hdp": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "dynamic_capabilities": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "ieec": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "llm_audit_trails": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "mat": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      },
+      "prov": {
+        "container_checklist": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "ledger_present": {
+          "cases": 8,
+          "overclaim_cases": 4,
+          "overclaim_rate": 0.5,
+          "sufficient_cases": 5,
+          "verdict_cases": 8
+        },
+        "schema_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        },
+        "source_specific_validator": {
+          "cases": 8,
+          "overclaim_cases": 0,
+          "overclaim_rate": 0.0,
+          "sufficient_cases": 1,
+          "verdict_cases": 8
+        },
+        "trace_present": {
+          "cases": 8,
+          "overclaim_cases": 6,
+          "overclaim_rate": 0.75,
+          "sufficient_cases": 7,
+          "verdict_cases": 8
+        }
+      }
+    }
+  }
+}

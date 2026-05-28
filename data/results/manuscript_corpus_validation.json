@@ -1,0 +1,118 @@
+{
+  "case_count": 64,
+  "case_files": [
+    {
+      "path": "data/results/manuscript_adjudicated_cases.jsonl",
+      "role": "case_manifest_jsonl"
+    }
+  ],
+  "claim_status": "manuscript_result_candidate",
+  "corpus_id": "manuscript",
+  "degradation_condition_counts": {
+    "artifact_only": 8,
+    "complete": 8,
+    "conflicting_identity": 8,
+    "final_only": 8,
+    "missing_context": 8,
+    "missing_delegation": 8,
+    "missing_policy": 8,
+    "partial_graph": 8
+  },
+  "expected_regimes": [
+    "aegis_ntc",
+    "aer",
+    "dcc_hdp",
+    "dynamic_capabilities",
+    "ieec",
+    "llm_audit_trails",
+    "mat",
+    "prov"
+  ],
+  "issues": [],
+  "label_contract": {
+    "annotation_files": [
+      {
+        "path": "data/annotations/manuscript_annotations.jsonl",
+        "role": "construction_rule_oracle_property_labels"
+      }
+    ],
+    "calibration_status": "construction_rule_oracle_v1",
+    "mode": "embedded_property_labels",
+    "required_properties": [
+      "actor_identity",
+      "principal_authority",
+      "action_boundary",
+      "policy_basis",
+      "decision_basis",
+      "data_resource_touch",
+      "lifecycle_context",
+      "verification_strength"
+    ]
+  },
+  "property_category_counts": {
+    "action_boundary": {
+      "complete": 56,
+      "opaque": 8
+    },
+    "actor_identity": {
+      "complete": 48,
+      "conflicting": 8,
+      "opaque": 8
+    },
+    "data_resource_touch": {
+      "complete": 56,
+      "opaque": 8
+    },
+    "decision_basis": {
+      "complete": 40,
+      "opaque": 8,
+      "partial": 16
+    },
+    "lifecycle_context": {
+      "complete": 40,
+      "opaque": 16,
+      "partial": 8
+    },
+    "policy_basis": {
+      "complete": 40,
+      "opaque": 16,
+      "partial": 8
+    },
+    "principal_authority": {
+      "complete": 40,
+      "conflicting": 8,
+      "opaque": 16
+    },
+    "verification_strength": {
+      "complete": 32,
+      "opaque": 8,
+      "partial": 24
+    }
+  },
+  "question_family_counts": {
+    "action_boundary": 8,
+    "actor_identity": 8,
+    "data_resource_touch": 8,
+    "decision_basis": 8,
+    "lifecycle_context": 8,
+    "policy_basis": 8,
+    "principal_authority": 8,
+    "verification_strength": 8
+  },
+  "regime_counts": {
+    "aegis_ntc": 8,
+    "aer": 8,
+    "dcc_hdp": 8,
+    "dynamic_capabilities": 8,
+    "ieec": 8,
+    "llm_audit_trails": 8,
+    "mat": 8,
+    "prov": 8
+  },
+  "strict_sufficiency_counts": {
+    "insufficient": 56,
+    "sufficient": 8
+  },
+  "valid": true,
+  "version": "1.0.0-candidate"
+}

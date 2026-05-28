@@ -1,0 +1,59 @@
+{
+  "annotators": [
+    "construction_rule_oracle_a",
+    "construction_rule_oracle_b"
+  ],
+  "case_count": 64,
+  "issues": [],
+  "metric_contract": "decision_evidence_label_calibration",
+  "overall": {
+    "agreement_rate": 1.0,
+    "cohen_kappa": 1.0,
+    "labels": 512
+  },
+  "paired_case_count": 64,
+  "paired_label_count": 512,
+  "properties": {
+    "action_boundary": {
+      "agreement_rate": 1.0,
+      "cohen_kappa": 1.0,
+      "labels": 64
+    },
+    "actor_identity": {
+      "agreement_rate": 1.0,
+      "cohen_kappa": 1.0,
+      "labels": 64
+    },
+    "data_resource_touch": {
+      "agreement_rate": 1.0,
+      "cohen_kappa": 1.0,
+      "labels": 64
+    },
+    "decision_basis": {
+      "agreement_rate": 1.0,
+      "cohen_kappa": 1.0,
+      "labels": 64
+    },
+    "lifecycle_context": {
+      "agreement_rate": 1.0,
+      "cohen_kappa": 1.0,
+      "labels": 64
+    },
+    "policy_basis": {
+      "agreement_rate": 1.0,
+      "cohen_kappa": 1.0,
+      "labels": 64
+    },
+    "principal_authority": {
+      "agreement_rate": 1.0,
+      "cohen_kappa": 1.0,
+      "labels": 64
+    },
+    "verification_strength": {
+      "agreement_rate": 1.0,
+      "cohen_kappa": 1.0,
+      "labels": 64
+    }
+  },
+  "valid": true
+}

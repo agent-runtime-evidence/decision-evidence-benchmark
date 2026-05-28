@@ -1,0 +1,12 @@
+{
+  "artifact_area_counts": {},
+  "blocker_count": 0,
+  "blockers": [],
+  "category_counts": {},
+  "issues": [],
+  "manuscript_result_ready": true,
+  "mechanics_valid": true,
+  "metric_contract": "decision_evidence_readiness_gap_report",
+  "source_metric_contract": "decision_evidence_result_readiness",
+  "valid": true
+}

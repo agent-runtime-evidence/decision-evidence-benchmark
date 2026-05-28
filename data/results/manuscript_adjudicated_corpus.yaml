@@ -1,0 +1,45 @@
+schema_version: 1
+corpus_id: manuscript
+version: 1.0.0-candidate
+claim_status: manuscript_result_candidate
+expected_regimes:
+- aegis_ntc
+- aer
+- dcc_hdp
+- dynamic_capabilities
+- ieec
+- llm_audit_trails
+- mat
+- prov
+case_files:
+- path: data/results/manuscript_adjudicated_cases.jsonl
+  role: case_manifest_jsonl
+label_contract:
+  mode: embedded_property_labels
+  calibration_status: construction_rule_oracle_v1
+  required_properties:
+  - actor_identity
+  - principal_authority
+  - action_boundary
+  - policy_basis
+  - decision_basis
+  - data_resource_touch
+  - lifecycle_context
+  - verification_strength
+  annotation_files:
+  - path: data/annotations/manuscript_annotations.jsonl
+    role: construction_rule_oracle_property_labels
+readiness_targets:
+  min_cases: 64
+  min_regimes: 8
+  min_degradation_conditions: 8
+  min_question_families: 8
+  min_cases_per_regime: 8
+  min_cases_per_degradation_condition: 8
+  min_cases_per_question_family: 8
+  min_strict_sufficient_cases: 8
+  min_strict_insufficient_cases: 8
+  min_complete_labels_per_property: 1
+  min_non_complete_labels_per_property: 1
+  min_label_cohen_kappa: 0.6
+  min_label_property_cohen_kappa: 0.6

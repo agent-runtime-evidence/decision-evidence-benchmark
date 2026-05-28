@@ -1,0 +1,85 @@
+{
+  "artifact_kind": "decision_evidence_benchmark_run",
+  "baselines": [
+    "trace_present",
+    "ledger_present",
+    "schema_present",
+    "container_checklist",
+    "source_specific_validator"
+  ],
+  "case_count": 64,
+  "claim_status": "manuscript_result_candidate",
+  "generated_at": "2026-05-25T09:01:17.671518+00:00",
+  "inputs": [
+    {
+      "bytes": 273992,
+      "path": "data/results/manuscript_adjudicated_cases.jsonl",
+      "role": "case_manifest_jsonl",
+      "sha256": "4fd263f532f84a64c13ea2bbfad54c2167d7c838a14ed1db300336fac7fc764b"
+    },
+    {
+      "bytes": 1159,
+      "path": "data/results/manuscript_adjudicated_corpus.yaml",
+      "role": "supporting_artifact",
+      "sha256": "991e7711170d4bb5900f4806c8c354a9ed10180f83d1be2ba8930f22215b2e0b"
+    },
+    {
+      "bytes": 2511,
+      "path": "data/results/manuscript_corpus_validation.json",
+      "role": "supporting_artifact",
+      "sha256": "3eb29cc34a2ff4961d3feccce5bfa7f32426b0db7a43b268771eaf9e425f7516"
+    },
+    {
+      "bytes": 1232,
+      "path": "data/results/manuscript_label_calibration.json",
+      "role": "supporting_artifact",
+      "sha256": "ef050300c3d626b1e8b298776d51445eca431aae0d227bce9ae33aa3402dedd5"
+    },
+    {
+      "bytes": 286563,
+      "path": "data/results/manuscript_label_review.json",
+      "role": "supporting_artifact",
+      "sha256": "ce77adad0ba02b10718c9f369580e7ba15779863d989d01163ed394572949916"
+    },
+    {
+      "bytes": 347,
+      "path": "data/results/manuscript_label_adjudication.json",
+      "role": "supporting_artifact",
+      "sha256": "d2477fa2b127518fef3348f545483e25e57e9b49281f302ed6c7b569b8f382fb"
+    },
+    {
+      "bytes": 380,
+      "path": "data/results/manuscript_scorer_validation.json",
+      "role": "supporting_artifact",
+      "sha256": "0ac758711aa40bea6cfbbf5a0e112e133ffeda1760b7a6288840f15cdf492d97"
+    },
+    {
+      "bytes": 6838,
+      "path": "data/results/manuscript_scorer_summary.json",
+      "role": "supporting_artifact",
+      "sha256": "3e7a4dde4848b859fe2962a5786807e49c59c17f9a6d12edfa6ff18a731711ae"
+    },
+    {
+      "bytes": 327,
+      "path": "data/results/manuscript_baseline_validation.json",
+      "role": "supporting_artifact",
+      "sha256": "a75f56423ce80bd879304303ca44ccc3cfda100e38c8da1e51129d9b5024e27b"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 120776,
+      "path": "data/results/manuscript_baseline_results.jsonl",
+      "role": "run_output",
+      "sha256": "5091a98b94f4d19850f77b1b950ba50d2bd4e36952729725ec3460f7603bb05e"
+    },
+    {
+      "bytes": 24763,
+      "path": "data/results/manuscript_baseline_summary.json",
+      "role": "run_output",
+      "sha256": "d8c6ac48b232694d39579f13bef7636a30b3268798b1e7d6fbb77cba09659459"
+    }
+  ],
+  "result_honesty": "Smoke and fixture outputs are not empirical evidence.",
+  "schema_version": 1
+}

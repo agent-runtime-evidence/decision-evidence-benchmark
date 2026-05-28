@@ -1,0 +1,240 @@
+{
+  "issues": [],
+  "metric_contract": "decision_evidence_candidate_scorer_evaluation",
+  "scorers": {
+    "decision_trace_reconstructor": {
+      "cases": 64,
+      "implementation_statuses": {
+        "redacted_property_rule_scorer_v1": 64
+      },
+      "mean_property_sufficiency_accuracy": 0.5625,
+      "overclaim_cases": 0,
+      "overclaim_rate": 0.0
+    }
+  },
+  "slices": {
+    "degradation_condition": {
+      "artifact_only": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.75
+        }
+      },
+      "complete": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 1.0
+        }
+      },
+      "conflicting_identity": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.25
+        }
+      },
+      "final_only": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.875
+        }
+      },
+      "missing_context": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.375
+        }
+      },
+      "missing_delegation": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5
+        }
+      },
+      "missing_policy": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.375
+        }
+      },
+      "partial_graph": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.375
+        }
+      }
+    },
+    "question_family": {
+      "action_boundary": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "actor_identity": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "data_resource_touch": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "decision_basis": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "lifecycle_context": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "policy_basis": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "principal_authority": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "verification_strength": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      }
+    },
+    "regime": {
+      "aegis_ntc": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "aer": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "dcc_hdp": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "dynamic_capabilities": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "ieec": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "llm_audit_trails": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "mat": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      },
+      "prov": {
+        "decision_trace_reconstructor": {
+          "cases": 8,
+          "implementation_statuses": {
+            "redacted_property_rule_scorer_v1": 8
+          },
+          "mean_property_sufficiency_accuracy": 0.5625
+        }
+      }
+    }
+  },
+  "valid": true
+}

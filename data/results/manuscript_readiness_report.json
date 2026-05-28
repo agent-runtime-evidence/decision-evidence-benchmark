@@ -1,0 +1,173 @@
+{
+  "blocking_reasons": [],
+  "components": {
+    "baseline_summary": {
+      "path": "data/results/manuscript_baseline_summary.json",
+      "valid": true
+    },
+    "baseline_validation": {
+      "path": "data/results/manuscript_baseline_validation.json",
+      "valid": true
+    },
+    "corpus_validation": {
+      "path": "data/results/manuscript_corpus_validation.json",
+      "valid": true
+    },
+    "cross_artifact_consistency": {
+      "valid": true
+    },
+    "label_adjudication": {
+      "path": "data/results/manuscript_label_adjudication.json",
+      "valid": true
+    },
+    "label_calibration": {
+      "path": "data/results/manuscript_label_calibration.json",
+      "valid": true
+    },
+    "label_review": {
+      "path": "data/results/manuscript_label_review.json",
+      "valid": true
+    },
+    "run_manifest": {
+      "path": "data/results/manuscript_run_manifest.json",
+      "valid": true
+    },
+    "scorer_summary": {
+      "path": "data/results/manuscript_scorer_summary.json",
+      "valid": true
+    },
+    "scorer_validation": {
+      "path": "data/results/manuscript_scorer_validation.json",
+      "valid": true
+    }
+  },
+  "manuscript_result_ready": true,
+  "mechanics_valid": true,
+  "metric_contract": "decision_evidence_result_readiness",
+  "observed": {
+    "baseline_implementation_statuses": {},
+    "baseline_metric_contract": "decision_evidence_overclaim_summary",
+    "baseline_scorers": [
+      "container_checklist",
+      "ledger_present",
+      "schema_present",
+      "source_specific_validator",
+      "trace_present"
+    ],
+    "baseline_validation_metric_contract": "decision_evidence_baseline_output_validation",
+    "candidate_fixture_statuses": {},
+    "candidate_metric_contract": "decision_evidence_candidate_scorer_evaluation",
+    "candidate_scorers": [
+      "decision_trace_reconstructor"
+    ],
+    "case_count": 64,
+    "corpus_claim_status": "manuscript_result_candidate",
+    "degradation_condition_case_count_min": 8,
+    "degradation_condition_count": 8,
+    "label_adjudication_override_label_count": 0,
+    "label_adjudication_unresolved_label_count": 0,
+    "label_calibration_status": "construction_rule_oracle_v1",
+    "label_cohen_kappa": 1.0,
+    "label_property_cohen_kappas": {
+      "action_boundary": 1.0,
+      "actor_identity": 1.0,
+      "data_resource_touch": 1.0,
+      "decision_basis": 1.0,
+      "lifecycle_context": 1.0,
+      "policy_basis": 1.0,
+      "principal_authority": 1.0,
+      "verification_strength": 1.0
+    },
+    "label_review_disagreed_property_count": 0,
+    "label_review_property_row_count": 512,
+    "paired_label_count": 512,
+    "property_category_counts": {
+      "action_boundary": {
+        "complete": 56,
+        "opaque": 8
+      },
+      "actor_identity": {
+        "complete": 48,
+        "conflicting": 8,
+        "opaque": 8
+      },
+      "data_resource_touch": {
+        "complete": 56,
+        "opaque": 8
+      },
+      "decision_basis": {
+        "complete": 40,
+        "opaque": 8,
+        "partial": 16
+      },
+      "lifecycle_context": {
+        "complete": 40,
+        "opaque": 16,
+        "partial": 8
+      },
+      "policy_basis": {
+        "complete": 40,
+        "opaque": 16,
+        "partial": 8
+      },
+      "principal_authority": {
+        "complete": 40,
+        "conflicting": 8,
+        "opaque": 16
+      },
+      "verification_strength": {
+        "complete": 32,
+        "opaque": 8,
+        "partial": 24
+      }
+    },
+    "question_family_case_count_min": 8,
+    "question_family_count": 8,
+    "regime_case_count_min": 8,
+    "regime_count": 8,
+    "run_claim_status": "manuscript_result_candidate",
+    "scorer_validation_metric_contract": "decision_evidence_scorer_output_validation",
+    "strict_sufficiency_counts": {
+      "insufficient": 56,
+      "sufficient": 8
+    }
+  },
+  "readiness_policy": {
+    "disallowed_baseline_implementation_statuses": [
+      "fixture_placeholder"
+    ],
+    "disallowed_candidate_fixture_statuses": [
+      "draft_synthetic_oracle",
+      "smoke_only"
+    ],
+    "disallowed_label_calibration_statuses": [
+      "draft_two_annotator_fixture",
+      "smoke_two_annotator_fixture"
+    ],
+    "min_cases": 64,
+    "min_cases_per_degradation_condition": 8,
+    "min_cases_per_question_family": 8,
+    "min_cases_per_regime": 8,
+    "min_complete_labels_per_property": 1,
+    "min_degradation_conditions": 8,
+    "min_label_cohen_kappa": 0.6,
+    "min_label_property_cohen_kappa": 0.6,
+    "min_non_complete_labels_per_property": 1,
+    "min_question_families": 8,
+    "min_regimes": 8,
+    "min_strict_insufficient_cases": 8,
+    "min_strict_sufficient_cases": 8,
+    "required_baselines": [
+      "container_checklist",
+      "ledger_present",
+      "schema_present",
+      "source_specific_validator",
+      "trace_present"
+    ],
+    "required_candidate_scorers": [
+      "decision_trace_reconstructor"
+    ],
+    "required_corpus_claim_status": "manuscript_result_candidate",
+    "required_run_claim_status": "manuscript_result_candidate"
+  }
+}
