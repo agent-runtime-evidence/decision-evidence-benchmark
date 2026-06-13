@@ -7,7 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Test collection now works under a bare `pytest` invocation: the suite
+  imports helpers from `scripts/` as a namespace package, which previously
+  resolved only because `make test` runs `python -m pytest` with the
+  repository root on `sys.path`; `pythonpath = ["."]` in the pytest config
+  makes both invocations equivalent.
+- `decision_evidence_benchmark.__version__` now matches the released
+  version line (it had stayed at 0.1.0a0), with a test pinning it against
+  the installed package metadata.
+
 ### Added
+
+- Dependabot configuration for pip dependencies and GitHub Actions.
 - `DATASHEET.md` per Gebru et al. (2021) schema (motivation, composition,
   collection process, preprocessing, uses, distribution, maintenance).
 - `CITATION.cff` with paper and software citation metadata, ORCID, and
